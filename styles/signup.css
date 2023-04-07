@@ -1,0 +1,164 @@
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  margin-top: 2%;
+  border: 1px solid #dbdbdb;
+  width: 40%;
+  height: fit-content;
+}
+
+a {
+  color: #9c9cbb;
+  text-decoration: none;
+}
+
+.links {
+  margin-top: 4%;
+}
+
+.copy {
+  color: #9c9cbb;
+}
+
+._aahw {
+  color: #8e8e8e;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0 40px 10px;
+  text-align: center;
+}
+
+.fb {
+  cursor: pointer;
+  color: white;
+  background-color: #0095f6;
+  border: 0px;
+  padding: 9px 40px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.fb:hover {
+  background-color: #0570b8;
+
+}
+
+.or {
+  color: #a08e8e;
+}
+
+.or:before {
+  content: " ";
+  height: 1px;
+  width: 129px;
+  background: #a08e8e;
+  display: block;
+  position: absolute;
+  margin-top: 1.79%;
+  left: 16%;
+}
+
+.or:after {
+  content: " ";
+  height: 1px;
+  width: 129px;
+  background: #a08e8e;
+  display: block;
+  position: absolute;
+  margin-top: -3.4%;
+  right: 15%;
+}
+
+.or {
+  position: relative;
+  max-width: 500px;
+  margin: 0px auto;
+  margin-top: 6%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+input {
+  width: 70%;
+  height: 40px;
+  margin-top: 3%;
+}
+
+.note {
+  font-weight: bold;
+  color: #918f8e;
+  margin-top: 15px;
+}
+
+.lm {
+  color: #00376b;
+}
+
+.signup {
+  background-color: #4db5f9;
+  border-radius: 8px;
+  border: 0;
+  color: white;
+  margin-bottom: 9%;
+  display: inline-block;
+  width: 77%;
+  padding: 8px 0px;
+}
+
+.li {
+  color: #00a2f8;
+}
+
+.login-form {
+  height: 70px;
+}
+
+.login {
+  font-size: larger;
+  margin-top: 5%;
+}
+
+._aa5q {
+  height: 40px;
+}
+
+.img {
+  margin-top: 15%;
+}
+/* ------------------- Media Queries ------------------- */
+@media screen and (max-width:1120px) {
+  form{
+    width: 60%;
+  }
+}
+@media screen and (max-width:775px) {
+  form{
+    width: 70%;
+  }
+  .or:after{
+    right: 10%;
+  }
+  .or:before {
+    left: 10%;
+    margin-top: 3.29%;
+  }
+}
+@media screen and (max-width:560px) {
+  form{
+    width: 100%;
+    border: 0;
+  }
+}
+@media screen and (max-width:400px) {
+  .or:before {
+    left: 5%;
+  }
+  .or:after{
+    right: 5%;
+  }
+}

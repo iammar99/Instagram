@@ -1,0 +1,269 @@
+/* -----------------  Header (Side-bar) ----------------- */
+nav.navbar.bg-body-tertiary {
+    padding: 0%;
+}
+.container-fluid.header-container {
+    width: fit-content;
+}
+
+.container-fluid {
+    padding: 0%;
+}
+
+.side-bar {
+    border-right: 1px solid #dbdbdb;
+    width: 266px;
+    height: 100vh;
+    position: fixed;
+}
+
+svg._ab6-.logo {
+    margin: 47px 0;
+}
+
+nav.side-links {
+    color: black;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 59px;
+    margin-left: 16px;
+}
+
+nav.side-links a {
+    color: black;
+}
+
+nav.side-links i {
+    margin-right: 10px;
+}
+
+.menu-bar {
+    height: 362px;
+    z-index: 1;
+    position: absolute;
+    top: 236px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -17px;
+    margin-right: 0;
+    font-size: small;
+    line-height: 48px;
+}
+
+#menu-bar span {
+    border-bottom: 1px solid #dbdbdb;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-bar span i {
+    position: relative;
+    top: 25px;
+}
+
+.visible {
+    display: block;
+}
+
+div#menu-bar {
+    margin: 0 0 0 -16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.logo-img {
+    display: none;
+}
+
+
+/* -----------------  End of Header (Side-bar) ----------------- */
+
+/* -----------------  Main ----------------- */
+
+main {
+    min-height: calc(100vh - 83.5px);
+}
+
+#suggestions {
+    height: 1000px;
+    width: 47%;
+    border: 1px solid #dbdbdb;
+    position: absolute;
+    top: 69px;
+    left: 475px;
+}
+
+#suggestions img {
+    width: 65px;
+    border-radius: 50%;
+    height: 72px;
+}
+
+#suggestions button {
+    border: 0;
+    color: white;
+    background-color: #0095f6;
+    border-radius: 6px;
+    width: 92px;
+    height: 39px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 65%;
+    margin-left: 25px;
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div9,
+.div10 {
+    display: flex;
+    margin-top: 9px;
+    padding: 5px 10px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+h4 {
+    display: inline;
+    position: relative;
+    top: 21px;
+    left: -32px;
+}
+
+/* -----------------  End of main ----------------- */
+
+/* -----------------  Footer ----------------- */
+a {
+    color: #6a6a73;
+    text-decoration: none;
+}
+
+.links {
+    margin-top: 4%;
+    font-size: smaller;
+}
+
+.copy {
+    color: #6a6a73;
+    font-size: smaller;
+}
+
+footer {
+    min-height: 83.5px;
+    position: absolute;
+    bottom: -82%;
+    left: 27%;
+}
+
+.container {
+    margin: 0%;
+} 
+.container-fluid.form-container {
+    display: none;
+}
+
+/* -----------------  End of Footer ----------------- */
+
+/* -----------------  Media Queries  ----------------- */
+@media screen and (max-width:1250px) {
+    .logo {
+        display: none;
+    }
+
+    .logo-img {
+        display: block;
+        margin: 25px 0px;
+    }
+
+    .side-links span {
+        display: none;
+    }
+
+    nav.side-links {
+        margin-left: 15%;
+    }
+
+    .side-bar {
+        border: 0;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .logo-img {
+        display: none;
+    }
+
+    .notification,
+    .search,
+    .border-0 {
+        display: none;
+    }
+    nav.side-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        bottom: 0%;
+        position: fixed;
+        width: 100%;
+        margin-left: 0%;
+        border-top: 1px solid #dbdbdb;
+        background-color: aliceblue;
+    }
+    h4,
+    footer
+    {
+        display: none;
+    }
+    svg._ab6-.logo {
+        display: none;
+    }
+    .container-fluid.form-container {
+        display: flex;
+    }
+    a.mobile-notification {
+        margin-left: 3%;
+        font-size: larger;
+    }
+    .col-2 {
+        display: flex;
+        justify-content: end;
+        width: 76%;
+    }
+    .me-2 {
+        margin-right: 0.5rem!important;
+        background-color: #efefef;
+    }
+    svg._ab6-.logo-text {
+        margin: 26% 39%;
+    }
+
+    #suggestions {
+        height: 1000px;
+        width: 69%;
+        border: 1px solid #dbdbdb;
+        position: absolute;
+        left: 143px;
+        top: 111px;
+    }
+}
+
+/* -----------------  End of Media Queries ----------------- */

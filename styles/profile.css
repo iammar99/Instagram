@@ -1,0 +1,314 @@
+/* -----------------  Header (Side-bar) ----------------- */
+nav.navbar.bg-body-tertiary {
+    padding: 0%;
+}
+
+.container-fluid.form-container {
+    display: none;
+}
+
+.container-fluid.header-container {
+    width: fit-content;
+}
+
+.container-fluid {
+    padding: 0%;
+}
+
+.side-bar {
+    border-right: 1px solid #dbdbdb;
+    width: 266px;
+    height: 100vh;
+    position: fixed;
+}
+
+svg._ab6-.logo {
+    margin: 47px 0;
+}
+
+nav.side-links {
+    color: black;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 59px;
+    margin-left: 16px;
+}
+
+nav.side-links a {
+    color: black;
+}
+
+nav.side-links i {
+    margin-right: 10px;
+}
+
+.menu-bar {
+    height: 362px;
+    z-index: 1;
+    position: absolute;
+    top: 236px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -17px;
+    margin-right: 0;
+    font-size: small;
+    line-height: 48px;
+}
+
+#menu-bar span {
+    border-bottom: 1px solid #dbdbdb;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-bar span i {
+    position: relative;
+    top: 25px;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+div#menu-bar {
+    margin: 0 0 0 -16px;
+}
+
+
+.logo-img {
+    display: none;
+}
+
+
+/* -----------------  End of Header (Side-bar) ----------------- */
+
+/* -----------------  Main ----------------- */
+main {
+    min-height: calc(100vh - 79.13px);
+}
+
+
+/* -----------------  Upper profile ----------------- */
+
+img.mainimg {
+    width: 129px;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    height: 2px;
+}
+
+.line {
+    width: 54vw;
+}
+
+.profileimg {
+    display: inline;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bio {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row-1 {
+    width: 64%;
+}
+
+.col.col-2 {
+    width: 65%;
+    position: relative;
+    top: 26px;
+}
+
+.col.col-1 {
+    width: 30%;
+}
+
+hr {
+    margin: 0%;
+}
+
+/* -----------------  End of Upper profile ----------------- */
+
+/*  --------------------- Lower profile --------------------- */
+nav.lower-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 39%;
+}
+
+a.active {
+    color: black;
+    border-top: 1px solid black;
+}
+
+nav.lower-nav a {
+    padding-top: 12px;
+}
+
+
+.mid-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 43px;
+    padding: 142px 0px 0px 0px;
+}
+
+i.fa-solid.fa-camera {
+    font-size: xxx-large;
+    padding: 16px 0px;
+}
+
+/* -----------------  End of Lower profile ----------------- */
+/*  --------------------- Setting --------------------- */
+.setting {
+    width: 299px;
+    height: 412px;
+    background-color: #aeacac;
+    z-index: 1;
+    position: relative;
+    top: -348px;
+    border-radius: 9px;
+}
+/* -----------------  End of Setting ----------------- */
+
+/* -----------------  End of Mian ----------------- */
+
+/*  --------------------- Footer --------------------- */
+.note {
+    font-weight: bold;
+    color: #918f8e;
+}
+
+a {
+    color: #9c9cbb;
+    text-decoration: none;
+}
+
+.links {
+    margin-top: 4%;
+}
+
+.copy {
+    color: #9c9cbb;
+}
+
+.footer {
+    height: 53.13px;
+    font-size: x-small;
+    margin-left: 6%;
+}
+
+/* -----------------  Media Queries  ----------------- */
+@media screen and (max-width:1250px) {
+    .logo {
+        display: none;
+    }
+
+    .logo-img {
+        display: block;
+        margin: 25px 0px;
+    }
+
+    .side-links span {
+        display: none;
+    }
+
+    nav.side-links {
+        margin-left: 15%;
+    }
+
+    .side-bar {
+        border: 0;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .logo-img {
+        display: none;
+    }
+
+    .notification,
+    .search,
+    .border-0 {
+        display: none;
+    }
+
+    nav.side-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        bottom: 0%;
+        position: fixed;
+        width: 100%;
+        margin-left: 0%;
+        border-top: 1px solid #dbdbdb;
+        background-color: aliceblue;
+    }
+
+    h4,
+    footer {
+        display: none;
+    }
+
+    svg._ab6-.logo {
+        display: none;
+    }
+
+    .container-fluid.form-container {
+        display: flex;
+    }
+
+    a.mobile-notification {
+        margin-left: 3%;
+        font-size: larger;
+    }
+
+    .col-2 {
+        display: flex;
+        justify-content: end;
+        width: 76%;
+    }
+
+    .me-2 {
+        margin-right: 0.5rem !important;
+        background-color: #efefef;
+    }
+
+    svg._ab6-.logo-text {
+        margin: 26% 39%;
+    }
+
+    #suggestions {
+        height: 1000px;
+        width: 69%;
+        border: 1px solid #dbdbdb;
+        position: absolute;
+        left: 143px;
+        top: 111px;
+    }
+    .container-fluid.Upper-container {
+        border-top: 1px solid #dbdbdb;
+    }
+}
+
+/* -----------------  End of Media Queries ----------------- */

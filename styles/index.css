@@ -1,0 +1,185 @@
+/* ------------------ Header ------------------  */
+
+
+
+/* ------------------ End of Header ------------------  */
+
+/* ------------------ Main ------------------  */
+
+._aa5q {
+  height: 40px;
+  margin-left: 3px;
+}
+
+._aahw {
+  color: #8e8e8e;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0 40px 10px;
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  color: white;
+  background-color: #0095f6;
+  border: 0px;
+  padding: 5px 40px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #0570b8;
+
+}
+
+form {
+  margin-top: 2%;
+  border: 1px solid #dbdbdb;
+  height: fit-content;
+  width: 128%;
+}
+div#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin-left: 4%;
+}
+
+img.logo.image-fluid {
+  width: 15px;
+}
+
+div#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.phone-img {
+  display: inline-block;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+img.phone.image-fluid {
+  width: 92%;
+}
+input {
+  width: 61%;
+}
+input {
+  width: 83%;
+  height: 34px;
+  margin-top: 12px;
+  border: 1px solid rgb(219, 219, 219);
+  font-size: smaller;
+}
+
+i.img {
+  margin-top: 26px;
+}
+.or{
+  color: #a08e8e;
+}
+.or:before {
+  content: " ";
+  height: 1px;
+  width: 98px;
+  background: #a08e8e;
+  display: block;
+  position: absolute;
+  margin-top: 1.67%;
+  left: 5%;
+}
+
+.or:after {
+  content: " ";
+  height: 1px;
+  width: 94px;
+  background: #a08e8e;
+  display: block;
+  position: absolute;
+  margin-top: -3.4%;
+  right: 5%;
+}
+.or{
+  position: relative;
+  max-width: 500px;
+  margin: 0px auto;
+  margin-top: 6%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.inner {
+  border: 1px solid #dbdbdb;
+  width: 128%;
+  display: flex;
+  justify-content: center;
+  height: 67px;
+  align-items: center;
+  margin-top: 3%;
+}
+a.fb {
+  color: #385185;
+}
+a.fp {
+  color: #84376b;
+  font-size: smaller;
+}
+.gta , .installpic{
+  width: 128%;
+  display: flex;
+  justify-content: center;
+}
+a.inner-link {
+  color: #0095f7;
+  font-size: small;
+  font-weight: 800;
+}
+.upper-divform.ms-5.ms-md-0 {
+  margin-left: 20px;
+}
+/* ------------------ Media queries ------------------  */
+@media screen and (max-width:875px) {
+  .phone{
+    display: none;
+  }
+}
+@media screen and (max-width:450px) {
+  form{
+    border: 0;
+  }
+  .inner{
+    border: 0;
+  }
+}
+/* ------------------ End of  Main ------------------  */
+
+/* ------------------  Footer ------------------  */
+a {
+  color: #9c9cbb;
+  text-decoration: none;
+}
+
+.links {
+  margin-top: 4%;
+}
+
+.copy {
+  color: #9c9cbb;
+}
+
+.phone-img {
+  display: inline-block;
+}
+
+
+
+/* ------------------  End of  Footer ------------------  */
