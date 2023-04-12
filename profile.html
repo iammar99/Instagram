@@ -51,7 +51,7 @@
                     </li>
                 </div>
                 <div class="col-2">
- 
+
                     <a href="" class="mobile-notification">
                         <i class="fa-solid fa-user-plus" style="color: black;"></i>
                     </a>
@@ -230,11 +230,11 @@
                     </div>
                     <div class="col col-2">
                         <div class="bio">
-                            <h2 id="demo"></h2>
+                            <p id="demo"></p>
                             <a href="" class="edit">Edit profile</a>
-                            <button style="border: 0px;" onclick="open()" ><i class="fa-solid fa-gear"></i></button>    
+                            <i class="fa-solid fa-gear" onclick="myfun3()"></i>
                         </div>
-                        <ul>
+                        <ul class="only-bigscreen">
                             <li>
                                 <div><b>0</b> posts</div>
                             </li>
@@ -252,6 +252,17 @@
             </div>
             <!-- lower profile -->
             <div class="lowerprofile">
+                <ul class="only-smallscreen">
+                    <li>
+                        <div><b>0</b><br> posts</div>
+                    </li>
+                    <li>
+                        <div><b>0</b><br> followers</div>
+                    </li>
+                    <li>
+                        <div><b>0</b><br> following</div>
+                    </li>
+                </ul>
                 <div class="line">
                     <hr>
                 </div>
@@ -317,22 +328,50 @@
                     </a>
                 </div>
             </div>
-                <!-- Setting -->
-                <div class="setting hidden" id="setting">
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
+            <!-- Setting -->
+            <div class="setting d-none" id="setting">
+                <a href="">
+                    Change password
+                </a>
+                <hr>
+                <a href="">
+                    QR Code
+                </a>
+                <hr>
+                <a href="">
+                    Apps and Websites
+                </a>
+                <hr>
+                <a href="">
+                    Notifications
+                </a>
+                <hr>
+                <a href="">
+                    Privacy and secutiy
+                </a>
+                <hr>
+                <a href="">
+                    Supervision
+                </a>
+                <hr>
+                <a href="">
+                    Login activity
+                </a>
+                <hr>
+                <a href="">
+                    Email from instagram
+                </a>
+                <hr>
+                <a href="">
+                    Log Out
+                </a>
+                <hr>
+                <a href="">
                     <button onclick="myfunclose()">
                         Cancel
                     </button>
-                </div>
+                </a>
+            </div>
         </center>
     </main>
 

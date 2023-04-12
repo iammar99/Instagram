@@ -205,6 +205,9 @@ footer {
     .side-bar {
         border: 0;
     }
+    #suggestions {
+        left: 271px;
+    }
 }
 
 @media screen and (max-width:770px) {
@@ -221,12 +224,13 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        bottom: 0%;
-        position: fixed;
-        width: 100%;
+        bottom: 9%;
+        position: absolute;
+        width: 100vw;
         margin-left: 0%;
         border-top: 1px solid #dbdbdb;
         background-color: aliceblue;
+        z-index: 63;
     }
     h4,
     footer
@@ -261,8 +265,17 @@ footer {
         width: 69%;
         border: 1px solid #dbdbdb;
         position: absolute;
-        left: 143px;
+        left: 92px;
         top: 111px;
+    }
+}
+@media screen and (max-width:500px) {
+    #suggestions {
+        position: relative;
+        left: 0;
+        width: 94%;
+        right: 0;
+        top: 18px;
     }
 }
 

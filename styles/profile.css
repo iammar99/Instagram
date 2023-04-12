@@ -78,6 +78,7 @@ nav.side-links i {
 .hidden {
     display: none;
 }
+
 div#menu-bar {
     margin: 0 0 0 -16px;
 }
@@ -109,7 +110,15 @@ li {
 button {
     height: 2px;
 }
-
+a.edit {
+    background-color: #dbdbdb;
+    padding-top: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-radius: 13px;
+    color: black;
+    font-weight: 700;
+}
 .line {
     width: 54vw;
 }
@@ -118,9 +127,12 @@ button {
     display: inline;
 }
 
-ul {
+ul.only-bigscreen {
     display: flex;
     justify-content: space-evenly;
+}
+ul.only-smallscreen{
+    display: none;
 }
 
 .bio {
@@ -181,14 +193,26 @@ i.fa-solid.fa-camera {
 /* -----------------  End of Lower profile ----------------- */
 /*  --------------------- Setting --------------------- */
 .setting {
-    width: 299px;
+    width: 311px;
     height: 412px;
-    background-color: #aeacac;
+    background-color: #ffffff;
     z-index: 1;
     position: relative;
-    top: -348px;
+    top: -431px;
     border-radius: 9px;
+    display: flex;
+    flex-direction: column;
 }
+
+button {
+    border: 0ch;
+}
+
+.setting a {
+    color: black;
+    padding: 5px 0px;
+}
+
 /* -----------------  End of Setting ----------------- */
 
 /* -----------------  End of Mian ----------------- */
@@ -306,9 +330,58 @@ a {
         left: 143px;
         top: 111px;
     }
+
     .container-fluid.Upper-container {
         border-top: 1px solid #dbdbdb;
     }
+    .container-fluid.Upper-container {
+        display: flex;
+    }
+    .col-2{
+        display: flex;
+        justify-content: flex-start;
+        width: 76%;
+        padding: 0;
+    }
+    ul.only-bigscreen {
+        display: none;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    ul.only-smallscreen {
+        display: flex;
+        justify-content: space-between;
+        height: 32px;
+        margin-top: 3%;
+    }
+    .only-smallscreen li {
+        width: 170px;
+    }
+    nav.lower-nav {
+        justify-content: space-between;
+        width: 100%;
+    }
+    nav.lower-nav a {
+        width: 29%;
+    }
+    img.mainimg {
+        width: 83px;
+    }
+    a.edit {
+        height: 40px;
+        width: 80%;
+    }
+    p#demo{
+
+    }
+    .fa-user-plus{
+        
+    }
 }
+
+
 
 /* -----------------  End of Media Queries ----------------- */
