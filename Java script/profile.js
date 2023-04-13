@@ -1,13 +1,17 @@
 // For username
 document.getElementById("demo").innerHTML = localStorage.getItem("username");
 // Functoin to display Setting bar
-function open(){
-    document.getElementById("setting").classList.add("visible")
-    document.getElementById("setting").classList.remove("visible")
+function myfun3(){
+    // document.getElementById("setting").classList.add("visible")
+    // document.getElementById("setting").classList.remove("hidden")
+     document.getElementById("setting").style.display = "flex"
+     document.getElementById("setting").style.opacity = "1"
+     document.getElementById("body").style.opacity = "0.3"
+    
 }
 // Functoin to hide Setting bar
-function close(){
-    document.getElementById("setting").classList.remove("visible")
+function myfunclose(){
+    document.getElementById("setting").classList.remove("hidden")
     document.getElementById("setting").classList.add("visible")
 }
 // Function to display menu bar

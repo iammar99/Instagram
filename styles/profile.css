@@ -79,6 +79,7 @@ nav.side-links i {
     display: none;
 }
 
+
 div#menu-bar {
     margin: 0 0 0 -16px;
 }
@@ -110,6 +111,7 @@ li {
 button {
     height: 2px;
 }
+
 a.edit {
     background-color: #dbdbdb;
     padding-top: 7px;
@@ -119,6 +121,7 @@ a.edit {
     color: black;
     font-weight: 700;
 }
+
 .line {
     width: 54vw;
 }
@@ -131,7 +134,8 @@ ul.only-bigscreen {
     display: flex;
     justify-content: space-evenly;
 }
-ul.only-smallscreen{
+
+ul.only-smallscreen {
     display: none;
 }
 
@@ -156,6 +160,10 @@ ul.only-smallscreen{
 
 hr {
     margin: 0%;
+}
+
+.col-3 {
+    display: none;
 }
 
 /* -----------------  End of Upper profile ----------------- */
@@ -200,7 +208,7 @@ i.fa-solid.fa-camera {
     position: relative;
     top: -431px;
     border-radius: 9px;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
@@ -307,11 +315,7 @@ a {
         font-size: larger;
     }
 
-    .col-2 {
-        display: flex;
-        justify-content: end;
-        width: 76%;
-    }
+
 
     .me-2 {
         margin-right: 0.5rem !important;
@@ -334,15 +338,18 @@ a {
     .container-fluid.Upper-container {
         border-top: 1px solid #dbdbdb;
     }
+
     .container-fluid.Upper-container {
         display: flex;
     }
-    .col-2{
+
+    .col-2 {
         display: flex;
         justify-content: flex-start;
         width: 76%;
         padding: 0;
     }
+
     ul.only-bigscreen {
         display: none;
     }
@@ -357,28 +364,68 @@ a {
         height: 32px;
         margin-top: 3%;
     }
+
     .only-smallscreen li {
         width: 170px;
     }
+
     nav.lower-nav {
         justify-content: space-between;
         width: 100%;
     }
+
     nav.lower-nav a {
         width: 29%;
     }
+
     img.mainimg {
         width: 83px;
     }
-    a.edit {
-        height: 40px;
-        width: 80%;
-    }
-    p#demo{
 
+    a.edit {
+        height: 37px;
+        width: 177px;
+        margin-top: 11px;
     }
-    .fa-user-plus{
-        
+
+    p#demo {
+        display: none;
+    }
+
+    .fa-gear {
+        display: none;
+    }
+    .col-3 {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        left: 148px;
+        font-size: larger;
+    }
+    .col-3 .fa-gear ,p#demo{
+        display: inline;
+    }
+    .col-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+    }
+    .top-gear{
+        display: inline-block;
+        margin: 20%;
+        font-size: x-large;
+    }
+    .col-upper{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+@media screen and (max-width:550px) {
+    a.edit {
+        width: 104%;
+        position: relative;
+        left: 55px;
     }
 }
 
