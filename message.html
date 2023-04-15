@@ -23,25 +23,12 @@
 
     <!-- Custon CSS -->
 
-    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/message.css">
 </head>
 
-<body id="body">
-    <header>
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid form-container">
-                <div class="col-1">
-                    <i class="fa-solid fa-gear top-gear" onclick="myfun3()"></i>
-
-                </div>
-                <div class="col-2 col-upper">
-
-                    <a href="" class="mobile-notification">
-                        <i class="fa-solid fa-user-plus" style="color: black;"></i>
-                    </a>
-                </div>
-            </div>
-        </nav>
+<body>
+    <!-- Side bar -->
+    <Header>
         <div class="container-fluid">
             <div class="side-bar">
                 <!-- Text -->
@@ -200,207 +187,25 @@
                 </nav>
             </div>
         </div>
-    </header>
-    <!--------------------------Main-------------------------->
+    </Header>
     <main>
-        <center>
-            <!-- Upper profile -->
-            <div class="container-fluid Upper-container">
-                <div class="row row-1">
-                    <div class="col col-1">
-                        <div class="profileimg">
-                            <img src="assets/profile.png" class="mainimg" alt="">
-                        </div>
+        <div class="containerfluid main-container">
+            <div class="container-fluid inbox">
+                <div class="row">
+                    <div class="user-name">
+                        <p class="demo">
+                            ammar&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-caret-down"></i>
+                        </p>
                     </div>
-                    <div class="col col-container">
-                        <div class="col-3">
-                            <p id="demo"></p>
-                            <button onclick="myfun3()">
-                                <i class="fa-solid fa-gear" ></i>
-                            </button>
-                        </div>
-                        <div class="col col-2">
-                            <div class="bio">
-                                <p id="demo"></p>
-                                <a href="" class="edit">Edit profile</a>
-                                <button onclick="myfun3()">
-                                    <i class="fa-solid fa-gear" ></i>
-                                </button>
-                            </div>
-                            <ul class="only-bigscreen">
-                                <li>
-                                    <div><b>0</b> posts</div>
-                                </li>
-                                <li>
-                                    <div><b>0</b> followers</div>
-                                </li>
-                                <li>
-                                    <div><b>0</b> following</div>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-pen-to-square"></i>
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
-            <!-- lower profile -->
-            <div class="lowerprofile">
-                <ul class="only-smallscreen">
-                    <li>
-                        <div><b>0</b><br> posts</div>
-                    </li>
-                    <li>
-                        <div><b>0</b><br> followers</div>
-                    </li>
-                    <li>
-                        <div><b>0</b><br> following</div>
-                    </li>
-                </ul>
-                <div class="line">
-                    <hr>
-                </div>
-                <nav class="lower-nav">
-                    <a href="#index" class="active">
-                        <svg aria-label="" class="_ab6-" color="rgb(38, 38, 38)" fill="rgb(38, 38, 38)" height="12"
-                            role="img" viewBox="0 0 24 24" width="12">
-                            <rect fill="none" height="18" stroke="currentColor" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="2" width="18" x="3" y="3"></rect>
-                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" x1="9.015" x2="9.015" y1="3" y2="21"></line>
-                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" x1="14.985" x2="14.985" y1="3" y2="21"></line>
-                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" x1="21" x2="3" y1="9.015" y2="9.015"></line>
-                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" x1="21" x2="3" y1="14.985" y2="14.985"></line>
-                        </svg>
-                        &nbsp;Posts
-                    </a>
-                    <a href="#index">
-                        <svg aria-label="" class="_ab6-" color="rgb(142, 142, 142)" fill="rgb(142, 142, 142)"
-                            height="12" role="img" viewBox="0 0 24 24" width="12">
-                            <polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
-                        </svg>
-                        &nbsp;Saved
-                    </a>
-                    <a href="#index">
-                        <svg aria-label="" class="_ab6-" color="rgb(142, 142, 142)" fill="rgb(142, 142, 142)"
-                            height="12" role="img" viewBox="0 0 24 24" width="12">
-                            <path
-                                d="M10.201 3.797 12 1.997l1.799 1.8a1.59 1.59 0 0 0 1.124.465h5.259A1.818 1.818 0 0 1 22 6.08v14.104a1.818 1.818 0 0 1-1.818 1.818H3.818A1.818 1.818 0 0 1 2 20.184V6.08a1.818 1.818 0 0 1 1.818-1.818h5.26a1.59 1.59 0 0 0 1.123-.465Z"
-                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2"></path>
-                            <path
-                                d="M18.598 22.002V21.4a3.949 3.949 0 0 0-3.948-3.949H9.495A3.949 3.949 0 0 0 5.546 21.4v.603"
-                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2"></path>
-                            <circle cx="12.072" cy="11.075" fill="none" r="3.556" stroke="currentColor"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
-                        </svg>&nbsp; Tagged
-                    </a>
-                </nav>
-            </div>
-            <div class="container-fluid mid-page">
-                <div class="row">
-                    <i class="fa-solid fa-camera"></i>
-                </div>
-                <div class="row">
-                    <h2 style="font-weight: 900;">
-                        Share Photos
-                    </h2>
-                </div>
-                <div class="row">
-                    <p class="para">
-                        When you share photos, they will appear on your profile.
-                    </p>
-                </div>
-                <div class="row">
-                    <a href="#index" class="last-link">
-                        Share your first photo
-                    </a>
-                </div>
-            </div>
-            <!-- Setting -->
-            <div class="setting hidden" id="setting">
-                <a href="">
-                    Change password
-                </a>
-                <hr>
-                <a href="">
-                    QR Code
-                </a>
-                <hr>
-                <a href="">
-                    Apps and Websites
-                </a>
-                <hr>
-                <a href="">
-                    Notifications
-                </a>
-                <hr>
-                <a href="">
-                    Privacy and secutiy
-                </a>
-                <hr>
-                <a href="">
-                    Supervision
-                </a>
-                <hr>
-                <a href="">
-                    Login activity
-                </a>
-                <hr>
-                <a href="">
-                    Email from instagram
-                </a>
-                <hr>
-                <a href="">
-                    Log Out
-                </a>
-                <hr>
-                <a href="">
-                    <button onclick="myfunclose()">
-                        Cancel
-                    </button>
-                </a>
-            </div>
-        </center>
+        </div>
     </main>
 
-    <!--------------------------Footer-------------------------->
-    <footer>
-        <center class="footer">
-            <nav class="links">
-                <a style="margin-right:5px" href="https://about.meta.com/">Meta</a>
-                <a style="margin-right:5px" href="https://about.instagram.com/">About</a>
-                <a style="margin-right:5px" href="https://about.instagram.com/blog/">Blog</a>
-                <a style="margin-right:5px" href="https://www.instagram.com/about/jobs/">Jobs</a>
-                <a style="margin-right:5px" href="https://help.instagram.com/">Help</a>
-                <a style="margin-right:5px" href="https://developers.facebook.com/docs/instagram">API</a>
-                <a style="margin-right:5px" href="https://www.instagram.com/legal/privacy/">Privacy</a>
-                <a style="margin-right:5px" href="https://www.instagram.com/legal/terms/">Terms</a>
-                <a style="margin-right:5px" href="https://www.instagram.com/directory/profiles/">Top Accounts</a>
-                <a style="margin-right:5px" href="https://www.instagram.com/explore/locations/">Location</a>
-                <a style="margin-right:5px" href="https://www.instagram.com/web/lite/">Instagram Lite</a>
-                <a style="margin-right:5px"
-                    href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2Fhelp%2Finstagram%2F261704639352628&e=AT1I9vunr0uMfP_vHTBNjX3PkmWPzkMAsJnN_bSLZ6Cwl3xMdlQYUmPNvu4KuHwjEoesvu_quLWWm-qCUg-nb8z3TJcrHScx_D7hwlTlsschypS3ZFZEFZ2_RU6pzKmXZnucQ3deBZe1-sjPpPGTdQ">Contact
-                    Uploading & Non-User</a>
-            </nav><br>
-            <p class="copy">
-                &copy; 2023 Instagram from Meta
-            </p>
-        </center>
-    </footer>
 </body>
-
-<!-- Custom JS -->
-
-<script src="Java script/profile.js"></script>
-
-<!-- Bootstrap -->
-
-<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Java script/message.js"></script>
 
 </html>

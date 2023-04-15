@@ -210,7 +210,10 @@ i.fa-solid.fa-camera {
     border-radius: 9px;
     display: none;
     flex-direction: column;
+    border: 1px solid #dbdbdb;
+    line-height: 30px;
 }
+
 
 button {
     border: 0ch;

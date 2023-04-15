@@ -1,0 +1,200 @@
+/* -----------------  Header (Side-bar) ----------------- */
+nav.navbar.bg-body-tertiary {
+    padding: 0%;
+}
+
+.container-fluid.header-container {
+    width: fit-content;
+}
+
+.container-fluid {
+    padding: 0%;
+}
+
+.side-bar {
+    border-right: 1px solid #dbdbdb;
+    width: 266px;
+    height: 100vh;
+    position: fixed;
+}
+
+svg._ab6-.logo {
+    margin: 47px 0;
+}
+
+nav.side-links {
+    color: black;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 59px;
+    margin-left: 16px;
+    border-right: 2px solid #dbdbdb;
+}
+
+nav.side-links a {
+    color: black;
+}
+
+nav.side-links i {
+    margin-right: 10px;
+}
+
+.menu-bar {
+    height: 362px;
+    z-index: 1;
+    position: absolute;
+    top: 236px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -17px;
+    margin-right: 0;
+    font-size: small;
+    line-height: 48px;
+}
+
+#menu-bar span {
+    border-bottom: 1px solid #dbdbdb;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-bar span i {
+    position: relative;
+    top: 25px;
+}
+
+.visible {
+    display: block;
+}
+
+div#menu-bar {
+    margin: 0 0 0 -16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.logo-img {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----------- End of side bar ----------- */
+
+/* ----------- main ----------- */
+.inbox {
+    width: 332px;
+    height: 92vh;
+    border: 2px solid #dbdbdb;
+    display: inline-block;
+}
+.main-container {
+    margin: 0px 28%;
+    position: absolute;
+    top: 34px;
+}
+div{
+    padding: 0;
+    margin: 0;
+}
+.row {
+    border-bottom: 2px solid #dbdbdb;
+    height: 13vh;
+    width: 332px;
+    margin: 0;
+    display: flex;
+}
+.icon {
+    display: flex;
+    justify-content: end;
+}
+.user-name {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+/* ----------- End of main ----------- */
+
+/* ----------- Media Queries ----------- */
+@media screen and (max-width:1250px) {
+    .logo {
+        display: none;
+    }
+
+    .logo-img {
+        display: block;
+        margin: 25px 0px;
+    }
+
+    .side-links span {
+        display: none;
+    }
+
+    nav.side-links {
+        margin-left: 15%;
+    }
+
+    .side-bar {
+        border: 0;
+    }
+
+}
+
+@media screen and (max-width:770px) {
+    .logo-img {
+        display: none;
+    }
+
+    .notification,
+    .search,
+    .border-0 {
+        display: none;
+    }
+
+    nav.side-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        bottom: 9%;
+        position: absolute;
+        width: 100vw;
+        margin-left: 0%;
+        border-top: 1px solid #dbdbdb;
+        background-color: aliceblue;
+        z-index: 63;
+    }
+
+    h4,
+    footer {
+        display: none;
+    }
+
+
+
+
+    svg._ab6-.logo-text {
+        margin: 26% 39%;
+    }
+
+    #suggestions {
+        height: 1000px;
+        width: 69%;
+        border: 1px solid #dbdbdb;
+        position: absolute;
+        left: 92px;
+        top: 111px;
+    }
+}
+
+/* ----------- End of Media Queries ----------- */
