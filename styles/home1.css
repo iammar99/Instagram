@@ -291,6 +291,7 @@ footer {
         display: flex;
         justify-content: space-between;
         overflow-y: auto;
+        border: 0;
     }
 
 
@@ -307,6 +308,12 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0 24%;
+        border: 1px solid #dbdbdb;
+        border-radius: 15px;
+    }
+    .name{
+        width: 119%;
     }
     .text{
         align-items: center;

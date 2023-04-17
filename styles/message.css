@@ -30,7 +30,7 @@ nav.side-links {
     align-items: flex-start;
     line-height: 59px;
     margin-left: 16px;
-    border-right: 2px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
 }
 
 nav.side-links a {
@@ -91,8 +91,10 @@ a {
 /* ----------- End of side bar ----------- */
 
 /* ----------- main ----------- */
+
+/* ----------- Inbox ----------- */
 .inbox {
-    width: 332px;
+    width: 37vw;
     height: 92vh;
     border: 2px solid #dbdbdb;
     display: inline-block;
@@ -101,6 +103,7 @@ a {
     margin: 0px 28%;
     position: absolute;
     top: 34px;
+    display: flex;
 }
 div{
     padding: 0;
@@ -109,20 +112,57 @@ div{
 .row {
     border-bottom: 2px solid #dbdbdb;
     height: 13vh;
-    width: 332px;
+    width: 37vw;
     margin: 0;
     display: flex;
 }
-.icon {
-    display: flex;
-    justify-content: end;
-}
+
 .user-name {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     font-size: large;
     font-weight: 600;
+    margin-top: 25px;
 }
+
+
+/* ----------- End of inbox ----------- */
+
+/* ----------- Second box ----------- */
+.fa-location-arrow {
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 83px;
+    display: flex;
+    justify-content: center;
+    width: 28%;
+}
+
+.second-box {
+    width: 40vw;
+    height: 92vh;
+    border: 2px solid #dbdbdb;
+    border-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button.message {
+    border: 0;
+    color: white;
+    background-color: #0095f6;
+    border-radius: 6px;
+    width: 203px;
+    height: 39px;
+}
+.second-box p{
+    text-align: center;
+}
+p.heading {
+    font-size: large;
+}
+/* ----------- End of Second box ----------- */
 
 /* ----------- End of main ----------- */
 
@@ -143,6 +183,10 @@ div{
 
     nav.side-links {
         margin-left: 15%;
+        border-right: 0;
+    }
+    .main-container{
+        margin: 0 10%;
     }
 
     .side-bar {
@@ -166,7 +210,7 @@ div{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        bottom: 9%;
+        bottom: 0%;
         position: absolute;
         width: 100vw;
         margin-left: 0%;
@@ -194,6 +238,19 @@ div{
         position: absolute;
         left: 92px;
         top: 111px;
+    }
+}
+@media screen and (max-width:700px) {
+    .inbox ,.second-box{
+        height: 81vh;
+    }
+}
+@media screen and (max-width:600px) {
+    .second-box{
+        display: none;
+    }
+    .inbox ,.row{
+        width: 86vw;
     }
 }
 
